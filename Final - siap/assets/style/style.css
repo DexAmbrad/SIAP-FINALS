@@ -1,0 +1,1441 @@
+@import "project.css";
+@import "groupproject.css";
+@import "figma.css";
+@import "global.css";
+
+
+.desktop {
+  background-color: #191619;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 3753px;
+  position: relative;
+}
+
+.desktop .home {
+  position: absolute;
+  top: 68px;
+  left: 157px;
+  width: 1070px;
+  height: 630px;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 20px; /* small padding from top */
+  left: 20px; /* small padding from left */
+  font-family: "Inter", Helvetica, sans-serif;
+  font-weight: 800; /* bolder for emphasis */
+  font-size: 40px; /* slightly bigger for impact */
+  color: #ffffff;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* subtle depth */
+  background: linear-gradient(90deg, #00aeff, #00b7ff); /* gradient text effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.desktop .text-wrapper:hover {
+  transform: translateY(-3px); /* slight lift */
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6); /* stronger shadow on hover */
+}
+
+
+
+.desktop .graduation {
+  position: absolute;
+  top: 108px;
+  left: 668px;
+  width: 392px;
+  height: 522px;
+  aspect-ratio: 0.75;
+  object-fit: cover;
+
+  /* 🔥 New Designs Below */
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.desktop .graduation:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+.desktop .div {
+  position: absolute;
+  top: 200px; /* slightly adjusted for balance */
+  left: 0px; /* add some padding from the edge */
+  font-family: "Inter", Helvetica, sans-serif; /* clean fallback fonts */
+  font-weight: 600;
+  font-size: 32px; /* slightly larger for impact */
+  color: #ffffff;
+  letter-spacing: 0.5px; /* subtle spacing for elegance */
+  line-height: 1.3; /* smoother reading */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4); /* soft shadow for depth */
+  transition: all 0.3s ease; /* smooth hover effects */
+}
+
+.desktop .div:hover {
+  color: #00ffff; /* vibrant accent color on hover */
+  text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.7); /* glowing effect */
+  transform: translateY(-3px); /* subtle lift on hover */
+}
+
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 250px; /* slightly adjusted for balance */
+  left: 0px; /* a bit more padding from the edge */
+  font-family: "Inter", Helvetica, sans-serif; /* use fallback sans-serif */
+  font-weight: 800; /* a stronger bold for emphasis */
+  color: #ffffff;
+  font-size: 48px; /* slightly bigger for impact */
+  letter-spacing: 1px; /* a bit of spacing for elegance */
+  line-height: 1.2; /* smoother line height */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* subtle shadow for depth */
+  white-space: nowrap;
+  transition: all 0.3s ease; /* smooth hover effects */
+}
+
+.desktop .text-wrapper-2:hover {
+  color: #00ffff; /* change color on hover */
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7); /* slightly stronger shadow */
+  transform: scale(1.05); /* subtle zoom effect */
+}
+
+
+.desktop .p {
+  position: absolute;
+  top: 318px;
+  left: 0;
+  width: 624px;
+  font-family: "Roboto-CondensedRegular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .image {
+  width: 3.83%;
+  height: 41px;
+  top: 408px;
+  left: 0;
+  position: absolute;
+  aspect-ratio: 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Floating animation */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.desktop .image:hover {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Keyframes for floating */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+.desktop .img {
+  width: 3.83%;
+  height: 41px;
+  top: 408px;
+  left: 7.85%;
+  position: absolute;
+  aspect-ratio: 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Floating animation */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.desktop .img:hover {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Floating keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+.desktop .image-2 {
+  top: 408px;
+  left: 159px;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  aspect-ratio: 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Floating animation */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.desktop .image-2:hover {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Floating keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+.desktop .rectangle {
+  position: absolute;
+  top: 484px;
+  left: 13px;
+  width: 185px;
+  height: 53px;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+}
+
+.desktop .text-wrapper-3 {
+  position: absolute;
+  top: 470px; /* adjust position as needed */
+  left: 24px; /* adjust position as needed */
+
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+
+  /* Button Styling */
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  user-select: none;
+}
+
+/* Hover Effect */
+.desktop .text-wrapper-3:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+/* Click Effect */
+.desktop .text-wrapper-3:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+
+.desktop .about-page {
+  position: absolute;
+  top: 810px;
+  left: 0;
+  width: 1440px;
+  height: 614px;
+  display: flex;
+  background-color: #6e767f;
+}
+
+.desktop .about {
+  margin-top: 51px;
+  width: 1030px;
+  height: 486px;
+  margin-left: 210px;
+  position: relative;
+}
+
+.desktop .exclude {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 364px;
+  height: 486px;
+  object-fit: cover;
+
+  /* 🔥 Design Enhancements */
+  border-radius: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+
+  /* Subtle glass effect behind the image */
+  backdrop-filter: blur(8px);
+
+  /* Smooth animation */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.desktop .exclude:hover {
+  transform: scale(1.05);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+
+.desktop .about-me {
+  position: absolute;
+  top: 27px;
+  left: 580px;
+  width: 207px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 43px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-4 {
+  position: absolute;
+  top: 76px;
+  left: 590px;
+  font-family: "Roboto-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .text-wrapper-5 {
+  position: absolute;
+  top: 126px;
+  left: 590px;
+  width: 379px;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-2 {
+  position: absolute;
+  top: 328px;
+  left: 653px;
+  width: 190px;
+  height: 53px;
+}
+
+.desktop .text-wrapper-6 {
+  position: absolute;
+  top: 340px;
+  left: 645px;
+
+  display: inline-block;
+  padding: 12px 32px;
+
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff; /* change text to white for button */
+  text-align: center;
+
+  background: linear-gradient(135deg, #4b8df8, #6ca8ff);
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.desktop .text-wrapper-6 {
+  position: absolute;
+  top: 300px; /* adjust as needed */
+  left: 600px; /* adjust as needed */
+
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+
+  /* Button Styling */
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  user-select: none;
+}
+
+/* Hover Effect */
+.desktop .text-wrapper-6:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+/* Click Effect */
+.desktop .text-wrapper-6:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+
+.desktop .skills-p {
+  position: absolute;
+  top: 1448px;
+  left: 0;
+  width: 1440px;
+  height: 737px;
+  display: flex;
+  justify-content: center;
+
+  /* New design */
+  background: linear-gradient(135deg, #6e767f, #52887c); /* Gradient background */
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow: hidden;
+
+  /* Animation */
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.desktop .skills {
+  margin-top: 26px;
+  width: 1062px;
+  height: 475px;
+  margin-left: -38px;
+  position: relative;
+}
+
+.desktop .text-wrapper-7 {
+  left: calc(50.00% - 58px);
+  color: #ffffff;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .rectangle-3 {
+  position: absolute;
+  top: 111px;
+  left: 0;
+  width: 316px;
+  height: 351px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .rectangle-4 {
+  position: absolute;
+  top: 111px;
+  left: 726px;
+  width: 316px;
+  height: 351px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .rectangle-5 {
+  position: absolute;
+  top: 97px;
+  left: 363px;
+  width: 316px;
+  height: 378px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .troubleshooting {
+  position: absolute;
+  top: 204px;
+  left: 367px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+
+  /* Gradient text */
+  background: linear-gradient(90deg, #5fb2ff, #18b5d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+  /* Padding and rounded corners */
+  padding: 5px 10px;
+  border-radius: 8px;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 1s ease forwards;
+
+  /* Hover effect */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.desktop .troubleshooting:hover {
+  transform: translateY(-3px);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes */
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional click effect */
+.desktop .troubleshooting:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+.desktop .image-3 {
+  width: 6.03%;
+  top: 126px;
+  left: 45.76%;
+  height: 64px;
+  position: absolute;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-8 {
+  position: absolute;
+  top: 244px;
+  left: 412px;
+  width: 218px;
+  font-family: "Sen-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-6 {
+  position: absolute;
+  top: 393px;
+  left: 454px;
+  width: 131px;
+  height: 40px;
+}
+
+.desktop .rectangle-7 {
+  position: absolute;
+  top: 371px;
+  left: 90px;
+  width: 131px;
+  height: 40px;
+  background-color: #000000;
+  border-radius: 30px;
+  border: 2px solid;
+  border-color: #0000003d;
+}
+
+.desktop .rectangle-8 {
+  position: absolute;
+  top: 385px;
+  left: 813px;
+  width: 139px;
+  height: 48px;
+}
+
+.desktop .text-wrapper-9 {
+  position: absolute;
+  top: 390px;
+  left: 467px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  font-size: 18px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  letter-spacing: 0;
+  line-height: normal;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  text-align: center;
+  user-select: none;
+}
+
+/* Hover effect */
+.desktop .text-wrapper-9:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+/* Click effect */
+.desktop .text-wrapper-9:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+
+.desktop .text-wrapper-10 {
+  position: absolute;
+  top: 383px;
+  left: 837px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+
+  /* Button styling */
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  text-align: center;
+  user-select: none;
+}
+
+/* Hover effect */
+.desktop .text-wrapper-10:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+/* Click effect */
+.desktop .text-wrapper-10:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+.desktop .rectangle-9 {
+  position: absolute;
+  top: 142px;
+  left: 853px;
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-11 {
+  position: absolute;
+  top: 209px;
+  left: 785px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+
+  /* Gradient text */
+  background: linear-gradient(90deg, #5fb2ff, #18b5d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+  /* Padding and rounded corners */
+  padding: 5px 10px;
+  border-radius: 8px;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 1s ease forwards;
+
+  /* Hover effect */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.desktop .text-wrapper-11:hover {
+  transform: translateY(-3px);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes */
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Click effect */
+.desktop .text-wrapper-11:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.desktop .text-wrapper-12 {
+  position: absolute;
+  top: 257px;
+  left: 764px;
+  width: 240px;
+  font-family: "Sen-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .image-4 {
+  width: 6.50%;
+  top: 142px;
+  left: 11.39%;
+  height: 69px;
+  position: absolute;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-13 {
+  position: absolute;
+  top: 250px;
+  left: 53px;
+  width: 250px;
+  font-family: "Sen-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-14 {
+  position: absolute;
+  top: 216px;
+  left: 45px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+
+  /* New design */
+  background: linear-gradient(90deg, #5fb2ff, #18b5d1); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+
+  /* Animation */
+  animation: fadeInText 1s ease forwards;
+}
+
+/* Hover effect */
+.desktop .text-wrapper-14:hover {
+  transform: translateY(-3px);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.creative-button {
+  position: absolute;
+  top: 380px;
+  left: 110px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  font-size: 18px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  letter-spacing: 0;
+  line-height: normal;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.creative-button:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+.creative-button:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+.desktop .projects-p {
+  position: absolute;
+  top: 2188px;
+  left: 0;
+  width: 1440px;
+  height: 779px;
+  background-color: #6e767f;
+}
+
+.desktop .projects {
+  position: absolute;
+  top: 68px;
+  left: 170px;
+  width: 1056px;
+  height: 493px;
+}
+
+.desktop .rectangle-10 {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 316px;
+  height: 389px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .rectangle-11 {
+  position: absolute;
+  top: 82px;
+  left: 726px;
+  width: 316px;
+  height: 389px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .rectangle-12 {
+  position: absolute;
+  top: 63px;
+  left: 363px;
+  width: 316px;
+  height: 430px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .text-wrapper-16 {
+  position: absolute;
+  top: 0;
+  left: 435px;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .rectangle-13 {
+  position: absolute;
+  top: 82px;
+  left: 19px;
+  width: 274px;
+  height: 196px;
+  background-color: #d9d9d9;
+}
+
+.desktop .info-techhh {
+  position: absolute;
+  top: 101px;
+  left: 19px;
+  width: 274px;
+  height: 154px;
+  aspect-ratio: 1.79;
+  object-fit: cover;
+}
+
+.desktop .info-tech {
+  position: absolute;
+  top: 82px;
+  left: 400px;
+  width: 242px;
+  height: 161px;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+
+.desktop .info-techh {
+  position: absolute;
+  top: 101px;
+  left: 744px;
+  width: 279px;
+  height: 160px;
+  aspect-ratio: 1.75;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-17 {
+  position: absolute;
+  top: 272px;
+  left: 45px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .personal-website {
+  position: absolute;
+  top: 304px;
+  left: 59px;
+  width: 190px;
+  font-family: "Sen-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .login-registration {
+  position: absolute;
+  top: 261px;
+  left: 418px;
+  width: 213px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-18 {
+  position: absolute;
+  top: 304px;
+  left: 415px;
+  width: 204px;
+  font-family: "Sen-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-19 {
+  position: absolute;
+  top: 284px;
+  left: 798px;
+  width: 172px;
+  font-family: "Sen-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-20 {
+  position: absolute;
+  top: 314px;
+  left: 793px;
+  width: 195px;
+  font-family: "Sen-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-14 {
+  position: absolute;
+  top: 480px; /* adjust as needed */
+  left: 1000px; /* adjust as needed */
+
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+
+  /* Button Styling */
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  user-select: none;
+}
+
+/* Hover Effect */
+.desktop .rectangle-14:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+/* Click Effect */
+.desktop .rectangle-14:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+.desktop .rectangle-15 {
+  position: absolute;
+  top: 495px;
+  left: 622px;
+
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+
+  /* Button Styling */
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  user-select: none;
+}
+
+/* Hover Effect */
+.desktop .rectangle-15:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+/* Click Effect */
+.desktop .rectangle-15:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.desktop .rectangle-16 {
+  position: absolute;
+  top: 492px;
+  left: 275px;
+  width: 113px;
+  height: 35px;
+}
+
+.desktop .text-wrapper-21 {
+  position: absolute;
+  top: 480px;
+  left: 268px;
+
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+
+  /* Button Styling */
+  background: linear-gradient(45deg, #6a5acd, #00ffff);
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  user-select: none;
+}
+
+/* Hover Effect */
+.desktop .text-wrapper-21:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 15px #00ffff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+}
+
+/* Click Effect */
+.desktop .text-wrapper-21:active {
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+
+.desktop .text-wrapper-22 {
+  top: 498px;
+  left: 1026px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-23 {
+  top: 510px;
+  left: 659px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+/* MAIN CONTAINER */
+.desktop .contacts-p {
+  position: absolute;
+  top: 3035px;
+  left: -6px;
+  width: 1440px;
+  height: 757px;
+
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* TITLE */
+.desktop .text-wrapper-24 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* FORM CARD */
+.desktop .frame {
+  width: 380px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* INPUT WRAPPERS */
+.desktop .component,
+.desktop .frame-wrapper,
+.desktop .component-2,
+.desktop .component-3 {
+  width: 100%;
+}
+
+/* INPUT STYLE */
+.desktop .email {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.desktop .email::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.desktop .email:focus {
+  background: white;
+  color: black;
+  transform: scale(1.03);
+}
+
+/* MESSAGE BOX */
+.desktop .component-4 {
+  width: 320px;
+  margin-top: 18px;
+}
+
+.desktop .frame-3 textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* SUBMIT BUTTON */
+.desktop .frame-2 {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff, #bdbdbd);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+.btn-submit {
+  background: none;        /* remove gray background */
+  border: none;            /* remove border */
+  color: #ffffff;          /* text color */
+  font-size: 16px;         /* text size */
+  font-weight: bold;       /* optional for emphasis */
+  cursor: pointer;         /* pointer on hover */
+  padding: 0;              /* remove default padding */
+  outline: none;           /* remove focus outline */
+}
+
+
+
+.desktop .text-wrapper-26 {
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* HOVER EFFECT */
+.desktop .frame-2:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: linear-gradient(135deg, #00ffd5, #00b3ff);
+  box-shadow: 0 12px 25px rgba(0,255,213,0.6);
+}
+
+
+
+.desktop .navbar {
+  position: absolute;
+  top: 52px;
+  left: 130px;
+  width: 1152px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  /* Effortful styling without changing color */
+  border-radius: 34px; /* rounded edges */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* soft shadow for depth */
+  padding: 0 30px;
+  transition: all 0.3s ease;
+}
+
+/* Navbar links */
+.desktop .navbar a {
+  text-decoration: none;
+  color: inherit; /* keep original text color */
+  font-family: 'Inter-Bold', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.desktop .navbar a:hover {
+  transform: scale(1.08); /* subtle zoom on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* gentle shadow on hover */
+}
+
+
+.desktop .text-wrapper-28 {
+  margin-top: 16px;
+  width: 72px;
+  height: 30px;
+  margin-left: 623px;
+  -webkit-text-stroke: 1px #77b8c9;
+  color: #f5f5f5;
+  white-space: nowrap;
+  text-shadow: 0px 4px 4px #77b8c9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-29 {
+  margin-top: 15px;
+  width: 74px;
+  height: 30px;
+  margin-left: 25px;
+  -webkit-text-stroke: 1px #77b8c9;
+  color: #f5f5f5;
+  white-space: nowrap;
+  text-shadow: 0px 4px 4px #77b8c9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-30 {
+  margin-top: 15px;
+  width: 64px;
+  height: 30px;
+  margin-left: 32px;
+  -webkit-text-stroke: 1px #77b8c9;
+  color: #f5f5f5;
+  white-space: nowrap;
+  text-shadow: 0px 4px 4px #77b8c9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-31 {
+  margin-top: 15px;
+  width: 100px;
+  height: 36px;
+  margin-left: 32px;
+  -webkit-text-stroke: 1px #77b8c9;
+  color: #f5f5f5;
+  text-shadow: 0px 4px 4px #77b8c9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-32 {
+  margin-top: 10px;
+  width: 97px;
+  height: 30px;
+  margin-left: 32px;
+  text-shadow: 0px 4px 4px #77b8c9;
+  -webkit-text-stroke: 1px #77b8c9;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #f5f5f5;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+/* Keyframes for fade-in and slide-up */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add animation to your existing classes */
+.desktop .text-wrapper-28,
+.desktop .text-wrapper-29,
+.desktop .text-wrapper-30,
+.desktop .text-wrapper-31,
+.desktop .text-wrapper-32 {
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+/* Optional: stagger animations */
+.desktop .text-wrapper-28 { animation-delay: 0s; }
+.desktop .text-wrapper-29 { animation-delay: 0.2s; }
+.desktop .text-wrapper-30 { animation-delay: 0.4s; }
+.desktop .text-wrapper-31 { animation-delay: 0.6s; }
+.desktop .text-wrapper-32 { animation-delay: 0.7s; }

@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0c23;
+  color: #f0f0ff;
+}
+
+.projects-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.projects-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.projects-section .subtitle {
+  color: #bbb;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #1a143a;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 150px;
+  background-color: #2a204d;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-image.empty {
+  background-color: #2a204d;
+}
+
+/* Project Title */
+.project-card h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: #4a3fff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #3a2bd7;
+}
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #555;
+}
